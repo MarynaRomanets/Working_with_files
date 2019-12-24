@@ -12,10 +12,12 @@ public class FileServiceGroup {
             while ((s = reader.readLine()) != null) {
                 stringBuffer.append(s);
             }
+            reader.close();
         } catch (IOException e) {
             System.out.println("ERROR --> in method readFile()");
         }
         String resultReadFile = stringBuffer.toString();
+
         return resultReadFile;
     }
 
@@ -31,6 +33,5 @@ public class FileServiceGroup {
         }
         return null;
     }
-
 
 }

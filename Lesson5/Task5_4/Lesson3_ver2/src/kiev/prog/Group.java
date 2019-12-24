@@ -119,8 +119,8 @@ public class Group {
     public String viewMistakeList() {
         return "MistakeList{" + Arrays.toString(mistakeList) + '}';
     }
-    public static Student[] readGroupFromFile(String path) throws IOException {
 
+    public static Student[] readGroupFromFile(String path) throws IOException {
         File fileGroup = new File(path);
         System.out.println("From file " + path + ": " + readFile(path));
         String[] arrayInfo = createArrayFromString(fileGroup);
